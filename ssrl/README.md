@@ -34,7 +34,7 @@ python scripts/go1_train.py
 Train using black-box models:
 
 ```sh
-python scripts/go1_train.py ssrl_dynamics_fn=mbpo
+python scripts/go1_train.py  ssrl.seed=15 wandb.log_ssrl=true wandb.entity=bigeasthuang
 ```
 
 Training with a single-step loss:
@@ -56,5 +56,5 @@ python scripts/go1_train.py wandb.entity=<YOUR_ORG_HERE> wandb.log_ssrl=true ren
 Run SSRL on a standard RL benchmark with the following command, replacing `<env_name_here>` with `ant2`, `hopper2`, or `walker2d2`:
 
 ```sh
-python scripts/rl_benchmarks.py env=<env_name_here>
+python scripts/rl_benchmarks.py env=ant2 wandb.log=true ssrl_model.ensemble_size=1 ssrl_model.num_elites=1 ssrl.num_epochs=1000 ssrl.num_evals=1001 wandb.entity=bigeasthuang
 ```

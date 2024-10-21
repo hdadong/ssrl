@@ -226,13 +226,13 @@ render:
 wandb:
   entity: your-wandb-org
   log_sac: False
-  log_ssrl: False
+  log_ssrl: True
 
 save_policy:
   sac: False
   sac_all: False
-  ssrl: False
-  ssrl_all: False
+  ssrl: True
+  ssrl_all: True
 
 torque_validate:
   hardware_data: True
