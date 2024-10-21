@@ -62,6 +62,12 @@ ssrl:
   hallucination_max_std: -1.0
   zero_final_layer_of_policy: False
 
+ssrl_model:
+  hidden_size: 400
+  ensemble_size: 7
+  num_elites: 5
+  probabilistic: True
+
 ssrl_linear_threshold_fn:  # k
   start_epoch: 20
   end_epoch: 150
